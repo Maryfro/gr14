@@ -1,0 +1,9 @@
+<div class="outer_container mt-3" *ngIf="statistics">
+  <h1>Top 5 visited links</h1>
+  <ol class="list-group list-group-numbered">
+    <app-statistic-item *ngFor="let elt of statistics; index as i" [elt]="elt" [index]="i"></app-statistic-item>
+  </ol>
+  <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3">
+    <button class="btn btn-primary" type="button" routerLink="/home">Back</button>
+  </div>
+</div>

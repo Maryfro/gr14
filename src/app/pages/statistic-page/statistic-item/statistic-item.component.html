@@ -1,0 +1,8 @@
+<li *ngIf="elt" class="list-group-item d-flex justify-content-between align-items-start">
+  <div class="ms-2 me-auto">
+    <div class="fw-bold">{{index}}</div>
+    <div class="fw-bold">{{elt.shortUrl}}</div>
+    <div class="fw-bold">{{elt.longUrl}}</div>
+  </div>
+  <span class="badge bg-primary rounded-pill">{{elt.amount}}</span>
+</li>
